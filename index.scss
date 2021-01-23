@@ -1,0 +1,56 @@
+.bg-gray {
+	background-color: gray;
+}
+
+.border {
+	&-1 {
+		border: solid 1px black;
+	}
+}
+
+.center {
+}
+
+header,
+section,
+footer,
+nav {
+	display: flex;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+
+	a {
+		display: block;
+		margin: 0px 10px;
+		height: auto;
+	}
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+section {
+	height: 750px;
+
+	img {
+		width: 272px;
+		height: 92px;
+	}
+}
+
+footer {
+	/*test */
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
