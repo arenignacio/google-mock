@@ -7,17 +7,76 @@
 }
 
 .nav-left {
-  float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  position: absolute;
+  top: 15px;
+  margin: 7px 0px 0px 10px;
+}
+
+.nav-left a {
+  display: inline-block;
+  padding: 0px 0px 0px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: black;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  opacity: 0.75;
+}
+
+.nav-left a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
 }
 
 .nav-right {
   float: right;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  top: 15px;
+  right: 0px;
+  padding: 0px 30px;
+}
+
+.nav-right a {
+  display: inline-block;
+  padding: 0px 0px 0px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: black;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.nav-right a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+}
+
+.nav-right a .profile {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.nav-right .menu {
+  height: 30px;
+  width: 30px;
 }
 
 header,
@@ -30,23 +89,8 @@ nav {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 0px;
-}
-
-header a {
   display: block;
-  margin: 0px 10px;
-  height: auto;
+  height: 89px;
 }
 
 nav {
@@ -73,7 +117,6 @@ section .searchbox-group {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 89px;
 }
 
 section img {
@@ -82,6 +125,7 @@ section img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-top: 109px;
 }
 
 section .searchbox {

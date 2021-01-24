@@ -9,13 +9,61 @@
 }
 
 .nav-left {
-	float: left;
-	display: flex;
+	display: block;
+	position: absolute;
+	top: 15px;
+	margin: 7px 0px 0px 10px;
+
+	a {
+		display: inline-block;
+		padding: 0px 0px 0px 15px;
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		color: rgb(0, 0, 0);
+		text-decoration-line: none;
+		opacity: 0.75;
+
+		&:hover {
+			text-decoration-line: underline;
+			text-decoration-color: rgb(0, 0, 0);
+		}
+	}
 }
 
 .nav-right {
 	float: right;
+	position: relative;
 	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex: 1 1 auto;
+	top: 15px;
+	right: 0px;
+	padding: 0px 30px;
+	a {
+		display: inline-block;
+		padding: 0px 0px 0px 15px;
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		color: rgb(0, 0, 0);
+		text-decoration-line: none;
+
+		&:hover {
+			text-decoration-line: underline;
+			text-decoration-color: rgb(0, 0, 0);
+		}
+
+		.profile {
+			height: 32px;
+			width: 32px;
+			border-radius: 50%;
+		}
+	}
+
+	.menu {
+		height: 30px;
+		width: 30px;
+	}
 }
 
 header,
@@ -26,16 +74,9 @@ nav {
 }
 
 header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 20px 0px;
+	display: block;
 
-	a {
-		display: block;
-		margin: 0px 10px;
-		height: auto;
-	}
+	height: 89px;
 }
 
 nav {
@@ -52,13 +93,13 @@ section {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		margin-top: 89px;
 	}
 
 	img {
 		width: 272px;
 		height: 92px;
 		align-self: center;
+		padding-top: 109px;
 	}
 
 	.searchbox {
