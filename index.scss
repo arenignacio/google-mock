@@ -93,6 +93,7 @@ section {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		width: 100%;
 	}
 
 	img {
@@ -103,10 +104,10 @@ section {
 	}
 
 	.searchbox {
+		display: flex;
+		flex-direction: row;
 		border: solid gray 1px;
 		border-radius: 10px;
-		height: auto;
-		width: auto;
 
 		img,
 		svg {
