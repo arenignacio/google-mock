@@ -1,3 +1,7 @@
+#magnifying-glass {
+	padding-top: 0px;
+}
+
 .bg-gray {
 	background-color: gray;
 }
@@ -66,8 +70,16 @@
 	}
 }
 
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+.searchbox-group {
+	width: 100%;
+}
+
 header,
-section,
 footer,
 nav {
 	display: flex;
@@ -89,13 +101,6 @@ section {
 	height: 750px;
 	justify-content: center;
 
-	.searchbox-group {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		width: 100%;
-	}
-
 	img {
 		width: 272px;
 		height: 92px;
@@ -106,8 +111,15 @@ section {
 	.searchbox {
 		display: flex;
 		flex-direction: row;
-		border: solid gray 1px;
-		border-radius: 10px;
+		border: solid #dfe1e5 1px;
+		border-radius: 25px;
+		width: 560px;
+		margin: 25px auto;
+		padding: 5px 8px 0px 14px;
+
+		img {
+			padding-right: 13px;
+		}
 
 		img,
 		svg {
@@ -119,6 +131,13 @@ section {
 		[type='search'] {
 			width: 487px;
 			height: 34px;
+			margin-bottom: 5px;
+			border: 0px;
+
+			&:focus,
+			&:active {
+				border: 0px;
+			}
 		}
 	}
 
